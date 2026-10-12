@@ -1,79 +1,89 @@
-# Tic-Tac-Toe AI
+# Tic-Tac-Toe AI — Minimax Algorithm
 
-An unbeatable Tic-Tac-Toe game implemented in Python using the Minimax algorithm.
+An interactive Tic-Tac-Toe game featuring an AI opponent that uses the **Minimax algorithm** to choose optimal moves. This project demonstrates adversarial search, game-state evaluation, and decision-making in artificial intelligence.
 
-## Overview
+## Play Online
 
-This project implements an artificial intelligence agent that plays Tic-Tac-Toe optimally. The AI evaluates possible game states and chooses moves that maximize its chances of winning while preventing the opponent from winning.
+**[Play Tic-Tac-Toe AI](https://david-oladepo.github.io/cs50-ai-tictactoe/)**
+
+Play as X against the AI, which plays as O. The browser version requires no installation.
 
 ## Features
 
-* Determines the current player based on the board state.
-* Identifies all legal moves.
-* Validates moves and preserves the original board state.
-* Detects winners and terminal game states.
-* Evaluates outcomes using a utility function.
-* Uses the Minimax algorithm to select optimal moves.
+* Human vs. AI gameplay
+* Minimax-based move selection
+* Optimal AI decision-making
+* Interactive browser interface
+* Game status and score tracking
+* New Game and Reset Scores controls
+* Python implementation using Pygame
 
-## Technologies
+## How the AI Works
 
-* Python 3
-* Minimax algorithm
-* Recursion
-* Game-state evaluation
+The AI uses the Minimax algorithm to evaluate possible future game states and select a move that maximizes its outcome, assuming the opponent also plays optimally.
 
-## How It Works
+* **AI win:** utility of +1
+* **Draw:** utility of 0
+* **Human win:** utility of -1
 
-The AI explores possible future game states recursively. It assumes both players make optimal decisions and evaluates terminal states as follows:
+The algorithm explores possible moves recursively and chooses the best available move. With correct implementation, the AI should never lose.
 
-* **+1:** X wins
-* **-1:** O wins
-* **0:** The game ends in a draw
-
-The algorithm selects the best available move according to whether it is playing as X or O.
-
-## Run Locally
+## Run the Python Version Locally
 
 ### Requirements
 
-* Python 3.12
-* Dependencies listed in `requirements.txt`
+* Python 3
+* pip
 
 ### Installation
 
-1. Clone this repository:
+Clone the repository:
 
-   ```bash
-   git clone https://github.com/David-Oladepo/cs50-ai-tictactoe.git
-   ```
+```bash
+git clone https://github.com/David-Oladepo/cs50-ai-tictactoe.git
+cd cs50-ai-tictactoe
+```
 
-2. Navigate into the project directory:
+Install the dependencies:
 
-   ```bash
-   cd cs50-ai-tictactoe
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-3. Install the required dependencies:
+Run the game:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+python runner.py
+```
 
-4. Launch the game:
+If your system uses `python3`, run `python3 runner.py` instead.
 
-   ```bash
-   python runner.py
-   ```
+Ensure `OpenSans-Regular.ttf` remains in the project directory because the Python interface uses this font.
 
+## Project Structure
 
-## Testing
-
-The implementation passed all 31 tests in CS50's `check50` for the Tic-Tac-Toe project and received a `style50` score of 1.00.
+* `tictactoe.py` — game logic and Minimax AI
+* `runner.py` — Python game interface
+* `index.html` — browser-playable game
+* `requirements.txt` — Python dependencies
+* `OpenSans-Regular.ttf` — font used by the Python interface
 
 ## Learning Outcomes
 
-This project strengthened my understanding of adversarial search, recursion, state-space exploration, and decision-making in artificial intelligence.
+This project explores:
 
-## Acknowledgment
+* Adversarial search and game theory fundamentals
+* Recursive algorithms and utility functions
+* State-space exploration
+* AI decision-making under optimal play
+* Building and publishing a browser-based application
 
-Developed as part of Harvard University's CS50's Introduction to Artificial Intelligence with Python coursework.
+## Acknowledgements
+
+Developed as part of the Harvard CS50's Introduction to Artificial Intelligence with Python coursework.
+
+## Author
+
+**David Oladepo**
+
+GitHub: [@David-Oladepo](https://github.com/David-Oladepo)
