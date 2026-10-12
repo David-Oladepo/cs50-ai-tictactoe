@@ -34,14 +34,37 @@ The algorithm selects the best available move according to whether it is playing
 
 ## Run Locally
 
-1. Install Python 3.
-2. Clone this repository.
-3. Navigate to the project directory.
-4. Run:
+### Requirements
 
-```bash
-python tictactoe.py
-```
+* Python 3.12
+* Dependencies listed in `requirements.txt`
+
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/David-Oladepo/cs50-ai-tictactoe.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd cs50-ai-tictactoe
+   ```
+
+3. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Launch the game:
+
+   ```bash
+   python runner.py
+   ```
+
 
 ## Testing
 
