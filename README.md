@@ -5,6 +5,10 @@ An interactive Tic-Tac-Toe game featuring an AI opponent that uses the **Minimax
 ## Play Online
 
 **[Play Tic-Tac-Toe AI](https://david-oladepo.github.io/cs50-ai-tictactoe/)**
+## Game Preview
+
+![Tic-Tac-Toe AI game screenshot](tic-tac-toe-game.png)
+
 
 Play as X against the AI, which plays as O. The browser version requires no installation.
 
